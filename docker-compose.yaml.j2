@@ -1,0 +1,21 @@
+# {{ ansible_managed }}
+version: '3.4'
+
+services:
+  go_app_agiletalks2019:
+    image: app:latest
+    ports:
+      - 80:80
+    deploy:
+      mode: global
+      update_config:
+        parallelism: 1
+        delay: 5s
+        failure_action: rollback
+        monitor: 30s
+      restart_policy:
+        condition: any
+        delay: 10s
+        max_attempts: 3
+        window: 10s
+    
