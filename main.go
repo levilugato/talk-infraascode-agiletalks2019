@@ -20,7 +20,7 @@ func main() {
  }
 
  http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-  fmt.Fprintf(w, "Project Agile Talks 2019 - Infraestrutura como código: %s\n", name)
+  fmt.Fprintf(w, "Your project running on the machine....: %s\n", name)
  })
  
  http.ListenAndServe(":" + PORT, nil)
