@@ -1,4 +1,4 @@
 [masters]
-184.73.76.149 ansible_user=ec2-user ansible_private_key_file=./private_key.pem
+your_ip_here ansible_user=ec2-user ansible_private_key_file=./private_key.pem
 [workers]
-54.82.1.50 ansible_user=ec2-user ansible_private_key_file=./private_key.pem
+your_ip_here ansible_user=ec2-user ansible_private_key_file=./private_key.pem
